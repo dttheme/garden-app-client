@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Field, reduxForm } from 'redux-form';
 
 let SignupForm = props => {
   const { handleSubmit } = props;
   return (
-    <form onsubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="firstName">First Name</label>
       <Field
         name="firstName"

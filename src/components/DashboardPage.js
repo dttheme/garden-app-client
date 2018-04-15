@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './Dashboard.css';
+import NewPlantForm from "./NewPlantForm";
+
+// import './Dashboard.css';
 
 class DashboardPage extends Component {
   render() {

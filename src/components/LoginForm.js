@@ -5,7 +5,7 @@ import { Field, reduxForm } from 'redux-form';
 let LoginForm = props => {
   const { handleSubmit } = props;
   return (
-    <form onsubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="email">Email</label>
       <Field
         name="email"

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
@@ -26,7 +26,6 @@ class App extends Component {
             <Route path="/garden" component={Garden} />
           </div>
         </Router>
-        <Home />
       </div>
     );
   }

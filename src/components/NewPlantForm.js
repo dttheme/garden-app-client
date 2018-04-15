@@ -5,28 +5,62 @@ import { Field, reduxForm } from 'redux-form';
 let SignupForm = props => {
   const { handleSubmit } = props;
   return (
-    <form onsubmit={handleSubmit}>
-      <label htmlFor="firstName">First Name</label>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="firstName">What kind of plant?</label>
       <Field
-        name="firstName"
+        name="plantName"
         component="input"
         type="text"
-        placeholder="First Name"
+        placeholder="Plant Name"
       />
-      <label htmlFor="email">Email</label>
+    <label htmlFor="plantDate">When was it planted?</label>
       <Field
-        name="email"
+        name="plantDate"
         component="input"
-        type="email"
-        placeholder="Username"
+        type="text"
+        placeholder="Date Planted"
       />
-      <label htmlFor="password">Password</label>
+    <label htmlFor="numberPlanted">How many were planted?</label>
+        <Field
+          name="numberPlanted"
+          component="input"
+          type="number"
+          value={1}
+          min={1}
+          max={100}
+        />
+    <label htmlFor="plantLocation">Where is it planted?</label>
       <Field
-        name="password"
+        name="plantLocation"
         component="input"
-        type="password"
-        placeholder="Password"
+        type="text"
+        placeholder="Plant Location"
       />
+    <label htmlFor="waterFrequency">How often should you water?</label>
+        <label>
+          <Field
+            name="waterFrequency"
+            component="input"
+            type="radio"
+            value="Once a day"
+          /> {' '} Once a day
+        </label>
+        <label>
+          <Field
+            name="waterFrequency"
+            component="input"
+            type="radio"
+            value="Once a week"
+          /> {' '} Once a week
+        </label>
+        <label>
+          <Field
+            name="waterFrequency"
+            component="input"
+            type="radio"
+            value="Once a month"
+          /> {' '} Once a month
+        </label>
       <button type="submit">Sign up</button>
     </form>
   );

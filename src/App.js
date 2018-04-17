@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import Home from './Home'
-import Header from './Header';
-import SignUp from './SignupPage';
-import Login from './LoginPage';
-import Dashboard from './DashboardPage';
-import Garden from './GardenPage';
+import Home from './containers/HomePage'
+import Header from './containers/Header';
+import SignUp from './containers/SignupPage';
+import Login from './containers/LoginPage';
+import Dashboard from './containers/DashboardPage';
+import Garden from './containers/GardenPage';
 
 import './App.css';
 

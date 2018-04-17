@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import NewPlantForm from "./NewPlantForm";
+import NewPlantForm from "../components/NewPlantForm";
 
 // import './Dashboard.css';
 

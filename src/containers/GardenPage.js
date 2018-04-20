@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import GardenEntry from '../components/GardenEntry'
+import Plant from '../components/Plant'
 // import './Dashboard.css';
 
 class GardenPage extends Component {
@@ -8,7 +8,7 @@ class GardenPage extends Component {
     return (
       <div className="GardenPage">
         <h2>Garden</h2>
-        <GardenEntry />
+        <Plant />
       </div>
     );
   }

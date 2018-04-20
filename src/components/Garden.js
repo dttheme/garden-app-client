@@ -1,6 +1,6 @@
 import React from "react";
 
-import GardenEntry from "./GardenEntry";
+import Plant from "./Plant";
 
 const GardenList = ({entries, on}) => (
   <div>

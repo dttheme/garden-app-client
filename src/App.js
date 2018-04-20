@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import { BrowserRouter as Route } from 'react-router-dom';
+import { ConnectedRouter } from 'react-router-redux';
 import { connect } from 'react-redux';
+import { history } from './redux/store/configure-store';
 
 import Home from './containers/HomePage'
 import Header from './containers/Header';
@@ -16,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <ConnectedRouter history={history}>
           <div>
             <Header />
             <Route exact path="/" component={Home} />
@@ -25,7 +26,7 @@ class App extends Component {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/garden" component={Garden} />
           </div>
-        </Router>
+        </ConnectedRouter>
       </div>
     );
   }

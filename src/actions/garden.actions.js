@@ -1,8 +1,24 @@
+import appConfig from '../config/appConfig.js';
 
 //Fetch all plants
 export const FETCH_GARDEN_REQUEST_TRIGGERED = 'FETCH_GARDEN_REQUEST_TRIGGERED';
 export const FETCH_GARDEN_REQUEST_SUCCESS = 'FETCH_GARDEN_REQUEST_SUCCESS';
 export const FETCH_GARDEN_REQUEST_FAILURE = 'FETCH_GARDEN_REQUEST_FAILURE';
+
+export function fetchGarden() {
+  const promise = fetch(`${appConfig.GARDEN_ENDPOINT}`, {
+      headers: {
+          'Content-Type': 'application/json',
+          Authorization: sessionStorage.getItem(appConfig.TOKEN_CONTENT_KEY)
+      }
+  });
+  return {
+      onRequest: FETCH_GARDEN_REQUEST_TRIGGERED,
+      onSuccess: FETCH_GARDEN_REQUEST_SUCCESS,
+      onFailure: FETCH_GARDEN_REQUEST_FAILURE,
+      promise,
+  };
+}
 
 //Fetch plant
 export const FETCH_PLANT_REQUEST_TRIGGERED ='FETCH_PLANT_REQUEST_TRIGGERED';

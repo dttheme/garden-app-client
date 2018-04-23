@@ -7,24 +7,14 @@ import Plant from '../components/Plant'
 
 class GardenPage extends Component {
   componentDidMount() {
-    this.props.fetchGarden();
+    console.log(this.props.match.params.id);
+    //this.props.fetchGarden(this.props.match.params.id);
   }
 
   render() {
     return (
       <div className="GardenPage">
-        {this.props.appState.isFetchingGarden ?
-          <div>
-            <h2>Loading...</h2>
-          </div>
-        :
-          <div>
-            <h2>Garden</h2>
-            {this.props.garden.hasOwnProperty('plants') && this.props.garden.plants.map((plant, index) => (
-              <Plant plant={plant} key={`garden-plant-${Math.random()}-${index}`} />
-            ))}
-        </div>
-        }
+        <h2>Plant - {this.props.match.params.id}</h2>
       </div>
     );
   }

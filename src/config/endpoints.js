@@ -1,6 +1,6 @@
 import getEnv from './environments';
 
-const { MAIN_APP_AUTHORITY } = getEnv().MAIN_APP_AUTHORITY;
+const MAIN_APP_AUTHORITY = getEnv().MAIN_APP_AUTHORITY;
 
 export default {
   // ////////////////////////// API ENDPOINTS ///////////////////////////////
@@ -11,8 +11,8 @@ export default {
   USER_ENDPOINT: `${MAIN_APP_AUTHORITY}/users/info`,
 
   /**
-   * Path used to fetch rides
+   * Path used to fetch garden
    */
-  RIDES_ENDPOINT: `${MAIN_APP_AUTHORITY}/rides`,
+  GARDEN_ENDPOINT: `${MAIN_APP_AUTHORITY}/garden`,
 
 };

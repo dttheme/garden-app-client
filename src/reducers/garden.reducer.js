@@ -1,11 +1,20 @@
-import * as actionTypes from 'actions';
+import * as actionTypes from '../actions/index.actions';
 
 const initialState = {
-  plants: []
-};
+  garden: {},
+}
+
 
 export default function garden(state = initialState, action) {
-  swtich (action.type) {
-    case actionTypes.fetch
+  switch (action.type) {
+    case actionTypes.FETCH_GARDEN_REQUEST_SUCCESS: {
+      return {
+        ...state,
+        isFetchingGarden: initialState.isFetchingGarden
+      };
+    }
+    default: {
+      return state;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+0import React, { Component } from 'react';
 
 import SignupForm from "../components/SignupForm"
 // import './SignupForm.css';

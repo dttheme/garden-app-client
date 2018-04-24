@@ -18,6 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        //TODO global message component
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/signup" component={SignUp} />

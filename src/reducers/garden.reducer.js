@@ -10,7 +10,7 @@ export default function garden(state = initialState, action) {
     case actionTypes.FETCH_GARDEN_REQUEST_SUCCESS: {
       return {
         ...state,
-        isFetchingGarden: initialState.isFetchingGarden
+        garden: action.response
       };
     }
     default: {

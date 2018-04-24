@@ -2,10 +2,11 @@ import * as actionTypes from '../actions/index.actions';
 
 
 const initialState = {
+  isCreatingUser: false,
   isFetchingUserInfo: false,
   hasUserInfo: false,
   isFetchingGarden: false,
-  isCreatngPlant: false,
+  isCreatingPlant: false,
   isDeletingPlant: false
 }
 
@@ -52,14 +53,20 @@ export default function appState(state = initialState, action) {
     case actionTypes.CREATE_PLANT_REQUEST_TRIGGERED: {
       return {
         ...state,
-        isCreatngPlant: initialState.isCreatngPlant
+        isCreatingPlant: true
       }
     }
-    case actionTypes.CREATE_PLANT_REQUEST_SUCCESS:
+    case actionTypes.CREATE_PLANT_REQUEST_SUCCESS: {
+      //TODO: create message for successful plant creation
+      return {
+        ...state,
+        isCreatingPlant: initialState.isCreatingPlant
+      }
+    }
     case actionTypes.CREATE_PLANT_REQUEST_FAILURE: {
       return {
         ...state,
-        isCreatngPlant: initialState.isCreatngPlant
+        isCreatingPlant: initialState.isCreatingPlant
       };
     }
 

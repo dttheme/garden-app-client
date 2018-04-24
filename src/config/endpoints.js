@@ -8,7 +8,12 @@ export default {
   /**
    * Path used to fetch basic informations about user and log user in
    */
-  USER_ENDPOINT: `${MAIN_APP_AUTHORITY}/users/info`,
+  USER_ENDPOINT: `${MAIN_APP_AUTHORITY}/users`,
+
+  /**
+   * Path used to register user
+   */
+  USER_CREATE: `${MAIN_APP_AUTHORITY}/users/signup`,
 
   /**
    * Path used to fetch garden
@@ -16,3 +21,6 @@ export default {
   GARDEN_ENDPOINT: `${MAIN_APP_AUTHORITY}/garden`,
 
 };
+
+
+//TODO: check server for endpoints

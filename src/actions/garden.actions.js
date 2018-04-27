@@ -15,7 +15,7 @@ export function fetchGarden() {
   });
   return {
       onRequest: FETCH_GARDEN_REQUEST_TRIGGERED,
-      onSuccess: FETCH_GARDEN_REQUEST_SUCCESS,
+      onSuccess: handleFetchGardenResponse,
       onFailure: FETCH_GARDEN_REQUEST_FAILURE,
       promise,
   };

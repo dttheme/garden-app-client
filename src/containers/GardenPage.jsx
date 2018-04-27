@@ -8,16 +8,17 @@ import Plant from '../components/Plant'
 class GardenPage extends Component {
   componentDidMount() {
     this.props.fetchGarden();
+    console.log(this.props);
   }
 
   render() {
     return (
-      <div className="GardenPage">
+      <div className="gardenPage">
         {this.props.appState.isFetchingGarden ?
           <div>
             <h2>Loading...</h2>
           </div>
-        :
+          :
           <div>
             <h2>Garden</h2>
             {this.props.garden.plants.length && this.props.garden.plants.map((plant, index) => (
@@ -25,7 +26,7 @@ class GardenPage extends Component {
                 <Plant plant={plant} />
               </li>
             ))}
-        </div>
+          </div>
         }
       </div>
     );

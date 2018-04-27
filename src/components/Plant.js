@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 export default function Plant(props) {
   return (
-    <div className="plant_wrapper">
+    <div className="plantWrapper">
       <h3>{props.plantName}</h3>
       {props.numberPlanted}
       <p>Date Planted: {props.plantDate}</p>

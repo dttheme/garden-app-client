@@ -6,6 +6,7 @@ const initialState = {
   isFetchingUserInfo: false,
   hasUserInfo: false,
   isFetchingGarden: false,
+  isFetchingPlant: false,
   isCreatingPlant: false,
   isDeletingPlant: false
 }
@@ -34,7 +35,7 @@ export default function appState(state = initialState, action) {
       };
     }
 
-    //Fetch garden
+    //Fetch all the plants
     case actionTypes.FETCH_GARDEN_REQUEST_TRIGGERED: {
       return {
         ...state,
@@ -46,6 +47,21 @@ export default function appState(state = initialState, action) {
       return {
         ...state,
         isFetchingGarden: initialState.isFetchingGarden
+      };
+    }
+
+    //Fetch single plant
+    case actionTypes.FETCH_PLANT_REQUEST_TRIGGERED: {
+      return {
+        ...state,
+        isFetchingPlant: true
+      };
+    }
+    case actionTypes.FETCH_PLANT_REQUEST_SUCCESS:
+    case actionTypes.FETCH_PLANT_REQUEST_FAILURE: {
+      return {
+        ...state,
+        isFetchingPlant: initialState.isFetchingPlant
       };
     }
 

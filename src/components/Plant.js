@@ -2,15 +2,22 @@ import React, { Component } from "react";
 
 // import './Dashboard.css';
 
-class Plant extends Component {
-  render() {
-    return (
-      <div className="plant_wrapper">
-        <h3></h3>
-        <p>This is where the plant entries will go</p>
-      </div>
-    );
-  }
+export default function Plant(props) {
+  return (
+    <div className="plant_wrapper">
+      <h3>{props.plantName}</h3>
+      {props.numberPlanted}
+      <p>Date Planted: {props.plantDate}</p>
+      <p>Location: {props.plantLocation}</p>
+      <p>You should water: {props.waterFrequency}</p>
+  </div>
+);
 }
 
-export default Plant;
+Plant.defaultProps = {
+  plantName: "",
+  plantDate: "00/00/00",
+  numberPlanted: null,
+  plantLocation: "",
+  waterFrequency: ""
+}

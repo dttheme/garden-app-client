@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { history } from './redux/store/configure-store';
+import PrivateRoute from './components/PrivateRoute';
+
 
 import Home from './containers/HomePage'
 import Header from './containers/Header';
@@ -20,22 +22,16 @@ class App extends Component {
         <Header />
         //TODO global message component
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/garden" component={Garden} />
-          <Route exact path="/plant/:id" component={Plant} />
+          <Route exact path="/" component={ Home } />
+          <Route exact path="/signup" component={ SignUp } />
+          <Route exact path="/login" component={ Login } />
+          <PrivateRoute exact path="/dashboard" component={ Dashboard } />
+          <PrivateRoute exact path="/garden" component={ Garden } />
+          <PrivateRoute exact path="/plant/:id" component={ Plant } />
         </Switch>
       </div>
     );
   }
 }
-
-// const mapStateToProps = (state)
-//
-// const AppContainer = connect(
-//   mapStateToProps,
-// )
 
 export default App;

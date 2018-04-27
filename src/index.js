@@ -6,8 +6,6 @@ import App from './App';
 import store, { history } from './redux/store/configure-store';
 import './index.css';
 
-
-
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>

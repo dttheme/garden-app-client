@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/index.actions';
 
 const initialState = {
-  garden: {},
+  plants: [],
 }
 
 
@@ -10,7 +10,7 @@ export default function garden(state = initialState, action) {
     case actionTypes.FETCH_GARDEN_REQUEST_SUCCESS: {
       return {
         ...state,
-        garden: action.response
+        plants: action.response
       };
     }
     default: {

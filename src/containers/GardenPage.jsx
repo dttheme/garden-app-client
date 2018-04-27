@@ -20,8 +20,10 @@ class GardenPage extends Component {
         :
           <div>
             <h2>Garden</h2>
-            {this.props.garden.hasOwnProperty('plants') && this.props.garden.plants.map((plant, index) => (
-              <Plant plant={plant} key={`garden-plant-${Math.random()}-${index}`} />
+            {this.props.garden.plants.length && this.props.garden.plants.map((plant, index) => (
+              <li key={`garden-plant-${Math.random()}-${index}`}>
+                <Plant plant={plant} />
+              </li>
             ))}
         </div>
         }
@@ -31,7 +33,7 @@ class GardenPage extends Component {
 }
 
 const mapStateToProps = state => ({
-  garden: state.garden.garden,
+  garden: state.garden,
   appState: {
     isFetchingGarden: state.appState.isFetchingGarden,
   },

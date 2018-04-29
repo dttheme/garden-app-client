@@ -15,8 +15,10 @@ class SignupPage extends Component {
   }
   render() {
     return (
-      <div className="signupWrapper">
-        <h2>Sign up</h2>
+      <div className="signupWrapper ml7 mr7">
+        <h2 className="f2 h3 tc">
+          Sign up
+        </h2>
           <form onSubmit={this.props.handleSubmit(this.submitHandler.bind(this))} method="POST">
             <label htmlFor="firstName">First Name</label>
             <Field
@@ -24,6 +26,7 @@ class SignupPage extends Component {
               component="input"
               type="text"
               placeholder="First Name"
+              className="db mb4 mt2"
               required
             />
             <label htmlFor="email">Email</label>
@@ -32,6 +35,7 @@ class SignupPage extends Component {
               component="input"
               type="email"
               placeholder="Username"
+              className="db mb4 mt2"
               required
             />
             <label htmlFor="password">Password</label>
@@ -40,6 +44,7 @@ class SignupPage extends Component {
               component="input"
               type="password"
               placeholder="Password"
+              className="db mb4 mt2"
               required
             />
             <button type="submit">Sign up</button>

@@ -13,8 +13,10 @@ class LoginPage extends Component {
   }
   render() {
     return (
-      <div className="loginWrapper">
-        <h2>Login</h2>
+      <div className="ml7 mr7 ba bw2 pa3">
+        <h2 className="f2 h3 tc">
+          Login
+        </h2>
         <form onSubmit={this.props.handleSubmit(this.submitHandler.bind(this))} method="POST">
           <label htmlFor="email">Email</label>
           <Field
@@ -22,7 +24,7 @@ class LoginPage extends Component {
             component="input"
             type="email"
             placeholder="Username"
-            value="dyanna@email.com"
+            className="db mb4 mt2"
           />
           <label htmlFor="password">Password</label>
           <Field
@@ -30,7 +32,7 @@ class LoginPage extends Component {
             component="input"
             type="password"
             placeholder="Password"
-            value="123"
+            className="db mb4 mt2"
           />
           <button type="submit">Login</button>
         </form>

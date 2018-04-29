@@ -13,12 +13,13 @@ import Dashboard from './containers/DashboardPage';
 import Garden from './containers/GardenPage';
 import Plant from './containers/PlantPage';
 
+
+        //TODO global message component
 class App extends Component {
   render() {
     return (
       <div className="App bg-dark-green helvetica vh-100">
         <Header />
-        //TODO global message component
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route exact path="/signup" component={ SignUp } />

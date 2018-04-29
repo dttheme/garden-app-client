@@ -8,7 +8,7 @@ import WelcomeMessage from '../components/Welcome'
 class Home extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="container home">
         <WelcomeMessage />
       </div>
     );

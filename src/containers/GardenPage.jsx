@@ -8,7 +8,7 @@ import Plant from '../components/Plant'
 class GardenPage extends Component {
   componentDidMount() {
     this.props.fetchGarden();
-    console.log(this.props);
+    console.log(this.props.garden.plants);
   }
 
   render() {
@@ -22,9 +22,7 @@ class GardenPage extends Component {
           <div>
             <h2>Garden</h2>
             {this.props.garden.plants.length && this.props.garden.plants.map((plant, index) => (
-              <li key={`garden-plant-${Math.random()}-${index}`}>
-                <Plant plant={plant} />
-              </li>
+                <Plant key={`garden-plant-${Math.random()}-${index}`} plant={plant} />
             ))}
           </div>
         }

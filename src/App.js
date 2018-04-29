@@ -13,12 +13,10 @@ import Dashboard from './containers/DashboardPage';
 import Garden from './containers/GardenPage';
 import Plant from './containers/PlantPage';
 
-import './App.css';
-
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App bg-dark-green helvetica vh-100">
         <Header />
         //TODO global message component
         <Switch>

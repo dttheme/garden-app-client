@@ -26,7 +26,7 @@ class Header extends Component {
     // <img src={logo} className="br-100 pa1 ba b--black-10 h3 w3" />
 
     return (
-        <div className="pt4  ml4 mr4">
+        <div className="pt3 pb3 ml4 mr4">
           <h1  className="f3 f1-ns fw9 moon-grey pa0 ma0 dib">Sprout Bud</h1>
           <nav className="fr">
             <ul>

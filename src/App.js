@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { history } from './redux/store/configure-store';
 import PrivateRoute from './components/PrivateRoute';
 
-
+import './App.css';
 import Home from './containers/HomePage'
 import Header from './containers/Header';
 import SignUp from './containers/SignupPage';
@@ -14,11 +14,11 @@ import Garden from './containers/GardenPage';
 import Plant from './containers/PlantPage';
 
 
-        //TODO global message component
+//TODO global message component
 class App extends Component {
   render() {
     return (
-      <div className="App bg-dark-green helvetica vh-100">
+      <div className="App bg-dark-green min-vh-100">
         <Header />
         <Switch>
           <Route exact path="/" component={ Home } />

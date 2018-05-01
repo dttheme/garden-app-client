@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Field, reduxForm } from 'redux-form';
-import { connect } from 'react-redux';
-import { createPlant } from '../actions/index.actions';
+import { Field, reduxForm } from "redux-form";
+import { connect } from "react-redux";
+import { createPlant } from "../actions/index.actions";
 
 
 // import './Dashboard.css';
@@ -17,14 +17,14 @@ export class DashboardPage extends Component {
   }
   render() {
     return (
-      <div className="ml7 mr7 ba bw2 pa3">
-        <h2 className="f2 h3 tc">
+      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
+        <h2 className="f2 tracked">
           Dashboard
         </h2>
         <form onSubmit={this.props.handleSubmit(this.submitHandler.bind(this))} method="POST">
           <label
             htmlFor="firstName"
-            className="f3 fw5"
+            className="tracked"
             >
             What kind of plant?
           </label>
@@ -32,12 +32,12 @@ export class DashboardPage extends Component {
             name="plantName"
             component="input"
             type="text"
-            placeholder="Plant Name"
-            className="db mb4 mt2"
+            placeholder="Tomato"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="plantDate"
-            className="f3 fw5"
+            className="tracked"
             >
             When was it planted?
           </label>
@@ -45,12 +45,12 @@ export class DashboardPage extends Component {
             name="plantDate"
             component="input"
             type="text"
-            placeholder="Date Planted"
-            className="db mb4 mt2"
+            placeholder="Late February"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="numberPlanted"
-            className="f3 fw5"
+            className="tracked"
             >
             How many were planted?
           </label>
@@ -61,27 +61,27 @@ export class DashboardPage extends Component {
             value={1}
             min={1}
             max={100}
-            className="db mb4 mt2"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="plantLocation"
-            className="f3 fw5"
+            className="tracked"
             >
             Where is it planted?</label>
           <Field
             name="plantLocation"
             component="input"
             type="text"
-            placeholder="Plant Location"
-            className="db mb4 mt2"
+            placeholder="Front porch"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="waterFrequency"
-            className="f3 fw5"
+            className="tracked"
             >
             How often should you water?
           </label>
-          <label>
+          <label className="db">
             <Field
               name="waterFrequency"
               component="input"
@@ -89,7 +89,7 @@ export class DashboardPage extends Component {
               value="Once a day"
               /> {' '} Once a day
             </label>
-            <label>
+            <label className="db">
               <Field
                 name="waterFrequency"
                 component="input"
@@ -97,7 +97,7 @@ export class DashboardPage extends Component {
                 value="Once a week"
                 /> {' '} Once a week
               </label>
-              <label>
+              <label className="db">
                 <Field
                   name="waterFrequency"
                   component="input"
@@ -105,7 +105,9 @@ export class DashboardPage extends Component {
                   value="Once a month"
                   /> {' '} Once a month
                 </label>
-                <button type="submit" className="db">
+                <button
+                  type="submit"
+                  className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black">
                   Submit
                 </button>
               </form>

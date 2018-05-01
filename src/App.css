@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ledger|Nixie+One');
+
+body, input, button {
+  font-family: "Ledger";
+}
+h1, h2, h3, nav {
+  font-family: "Nixie One";
+}
+input:focus, li:focus {
+  outline: 2px solid red;
+}

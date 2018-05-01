@@ -3,12 +3,11 @@ import { connect } from 'react-redux';
 import { fetchPlant } from '../actions/index.actions';
 
 import Plant from '../components/Plant'
-// import './Dashboard.css';
+
 
 class PlantPage extends Component {
   componentDidMount() {
-      this.props.fetchPlant();
-      console.log(this.props);
+      this.props.fetchPlant(this.props.match.params.id);
   }
 
   render() {
@@ -19,11 +18,9 @@ class PlantPage extends Component {
             <h2>Loading...</h2>
           </div>
           :
+          //
           <div>
-            <h2>Plant - {this.props.match.params.id}</h2>
-            {this.props.match.params.plantName}
-            {this.props.match.params.plantDate}
-            {this.props.match.params.plantLocation}
+            {this.props.currentPlant && <Plant isNotLinking plant={this.props.currentPlant} /> }
           </div>
         }
       </div>
@@ -32,7 +29,7 @@ class PlantPage extends Component {
 }
 
 const mapStateToProps = state => ({
-  garden: state.garden,
+  currentPlant: state.garden.currentPlant,
   appState: {
     isFetchingPlant: state.appState.isFetchingPlant,
   },

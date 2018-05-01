@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import { fetchGarden } from '../actions/index.actions';
+import { fetchGarden, deletePlant } from '../actions/index.actions';
 
 import Plant from '../components/Plant'
 // import './Dashboard.css';
@@ -13,16 +13,20 @@ class GardenPage extends Component {
 
   render() {
     return (
-      <div className="gardenPage">
+      <div className="gardenPage ml6 mr6 ba bw2 pa4">
         {this.props.appState.isFetchingGarden ?
           <div>
             <h2>Loading...</h2>
           </div>
           :
           <div>
-            <h2>Garden</h2>
-            {this.props.garden.plants.length && this.props.garden.plants.map((plant, index) => (
-                <Plant key={`garden-plant-${Math.random()}-${index}`} plant={plant} />
+            <h2
+              className="f2 h3 tc"
+              >
+              Garden
+            </h2>
+            {this.props.garden.plants.length >0 && this.props.garden.plants.map((plant, index) => (
+                <Plant key={`garden-plant-${Math.random()}-${index}`} plant={plant} deleteHandler={this.props.deletePlant} />
             ))}
           </div>
         }
@@ -38,4 +42,4 @@ const mapStateToProps = state => ({
   },
 })
 
-export default connect(mapStateToProps, { fetchGarden })(GardenPage);
+export default connect(mapStateToProps, { fetchGarden, deletePlant })(GardenPage);

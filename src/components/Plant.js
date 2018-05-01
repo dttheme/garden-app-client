@@ -1,15 +1,19 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
-// import './Dashboard.css';
 
 export default function Plant(props) {
   return (
     <div className="plantWrapper">
-      <h3>{props.plantName}</h3>
-      {props.numberPlanted}
-      <p>Date Planted: {props.plantDate}</p>
-      <p>Location: {props.plantLocation}</p>
-      <p>You should water: {props.waterFrequency}</p>
+      <h3>
+        {!props.isNotLinking ? <Link to={`/plant/${props.plant._id}`}>{props.plant.plantName}</Link> : props.plant.plantName}
+      </h3>
+      {props.plant.numberPlanted}
+      <p>Date Planted: {props.plant.plantDate}</p>
+      <p>Location: {props.plant.plantLocation}</p>
+      <p>You should water: {props.plant.waterFrequency}</p>
+      {props.deleteHandler && <button onClick={()=>props.deleteHandler(props.plant._id)}>x</button>}
+      <hr></hr>
   </div>
 );
 }
@@ -19,5 +23,7 @@ Plant.defaultProps = {
   plantDate: "00/00/00",
   numberPlanted: null,
   plantLocation: "",
-  waterFrequency: ""
+  waterFrequency: "",
+  deleteHandler: null,
+  isNotLinking: false
 }

@@ -13,28 +13,42 @@ class LoginPage extends Component {
   }
   render() {
     return (
-      <div className="ml7 mr7 ba bw2 pa3">
-        <h2 className="f2 h3 tc">
+      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
+        <h2 className="f2 tracked">
           Login
         </h2>
         <form onSubmit={this.props.handleSubmit(this.submitHandler.bind(this))} method="POST">
-          <label htmlFor="email">Email</label>
+          <label
+            htmlFor="email"
+            className="tracked"
+            >
+            Email
+          </label>
           <Field
             name="username"
             component="input"
             type="email"
-            placeholder="Username"
-            className="db mb4 mt2"
+            placeholder="sprout@email.com"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
           />
-          <label htmlFor="password">Password</label>
+          <label
+            htmlFor="password"
+            className="tracked"
+            >
+            Password
+          </label>
           <Field
             name="password"
             component="input"
             type="password"
-            placeholder="Password"
-            className="db mb4 mt2"
+            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
           />
-          <button type="submit">Login</button>
+          <button
+            type="submit"
+            className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black"
+            >
+            Login
+          </button>
         </form>
       </div>
 

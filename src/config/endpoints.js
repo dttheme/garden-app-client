@@ -21,6 +21,3 @@ export default {
   GARDEN_ENDPOINT: `${MAIN_APP_AUTHORITY}/garden`,
 
 };
-
-
-//TODO: check server for endpoints

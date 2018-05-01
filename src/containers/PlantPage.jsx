@@ -12,7 +12,7 @@ class PlantPage extends Component {
 
   render() {
     return (
-      <div className="plantPage">
+      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
         {this.props.appState.isFetchingPlant ?
           <div>
             <h2>Loading...</h2>

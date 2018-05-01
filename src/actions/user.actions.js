@@ -8,7 +8,7 @@ export const FETCH_USER_INFO_REQUEST_FAILURE = 'FETCH_USER_INFO_REQUEST_FAILURE'
 
 
 export function fetchUserInfo() {
-  const promise = fetch(`${appConfig.USER_ENDPOINT}`, {
+  const promise = fetch(`${appConfig.USER_ENDPOINT}/`, {
         headers: {
             'Content-Type': 'application/json',
             Authorization: sessionStorage.getItem(appConfig.TOKEN_CONTENT_KEY)
@@ -21,6 +21,7 @@ export function fetchUserInfo() {
     promise,
   }
 }
+
 
 //Fetch user login
 export const FETCH_USER_LOGIN_REQUEST_TRIGGERED = 'FETCH_USER_LOGIN_REQUEST_TRIGGERED';

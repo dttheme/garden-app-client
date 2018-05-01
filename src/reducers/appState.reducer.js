@@ -4,7 +4,6 @@ import * as actionTypes from '../actions/index.actions';
 const initialState = {
   isCreatingUser: false,
   isFetchingUserInfo: false,
-  hasUserInfo: false,
   isFetchingGarden: false,
   isFetchingPlant: false,
   isCreatingPlant: false,
@@ -21,13 +20,7 @@ export default function appState(state = initialState, action) {
         isFetchingUserInfo: true,
       };
     }
-    case actionTypes.FETCH_USER_INFO_REQUEST_SUCCESS: {
-      return {
-        ...state,
-        hasUserInfo: true,
-        isFetchingUserInfo: initialState.isFetchingUserInfo
-      };
-    }
+    case actionTypes.FETCH_USER_INFO_REQUEST_SUCCESS: 
     case actionTypes.FETCH_USER_INFO_REQUEST_FAILURE: {
       return {
         ...state,

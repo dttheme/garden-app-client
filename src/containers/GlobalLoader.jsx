@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import hasToken from '../helpers/token'
 import { fetchUserInfo } from "../actions/index.actions";
 
-
-// TODO: Why does the console not recognize the user?
 class GlobalLoader extends React.Component {
   componentDidMount() {
     if (hasToken() && !this.props.user.isLoggedIn) {

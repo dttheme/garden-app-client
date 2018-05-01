@@ -2,14 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import appConfig from '../config/appConfig';
 
-
-// TODO: Why are navigation links not changing when logged out?
-// TODO: Should I create action/reducer for logging out?
 class Header extends Component {
   render() {
-    function logoutUser() {
-      sessionStorage.removeItem(appConfig.TOKEN_CONTENT_KEY);
-    }
     return (
       <div>
         <div className="pt3 pb3 ml4 mr4">
@@ -28,10 +22,10 @@ class Header extends Component {
                   <Link to="/dashboard" className="washed-green no-underline underline-hover hover-light-yellow pr4">Dashboard</Link>
                 </li>
                 <li className="dib f5 fw9 tracked">
-                  <Link to="/garden" className="washed-green no-underline underline-hover hover-light-yellow pr4">Garden</Link>
+                  <Link to="/garden" className="washed-green no-underline underline-hover hover-light-yellow pr4">{this.props.firstName}'s Garden</Link>
                 </li>
                 <li className="dib f5 fw9 tracked">
-                  <button onClick={logoutUser} className="ba0 washed-green no-underline underline-hover hover-light-yellow pr4">Logout</button>
+                  <a onClick={this.props.logoutUser} className="ba0 washed-green no-underline underline-hover hover-light-yellow pr4">Logout</a>
                 </li>
               </ul>
             </nav>

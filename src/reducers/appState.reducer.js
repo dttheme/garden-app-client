@@ -7,7 +7,8 @@ const initialState = {
   isFetchingGarden: false,
   isFetchingPlant: false,
   isCreatingPlant: false,
-  isDeletingPlant: false
+  isDeletingPlant: false,
+  message: null
 }
 
 
@@ -20,7 +21,7 @@ export default function appState(state = initialState, action) {
         isFetchingUserInfo: true,
       };
     }
-    case actionTypes.FETCH_USER_INFO_REQUEST_SUCCESS: 
+    case actionTypes.FETCH_USER_INFO_REQUEST_SUCCESS:
     case actionTypes.FETCH_USER_INFO_REQUEST_FAILURE: {
       return {
         ...state,
@@ -69,7 +70,11 @@ export default function appState(state = initialState, action) {
       //TODO: create message for successful plant creation
       return {
         ...state,
-        isCreatingPlant: initialState.isCreatingPlant
+        isCreatingPlant: initialState.isCreatingPlant,
+        message: {
+            isError: false,
+            message: "Your new plant has been added to your garden!",
+        }
       }
     }
     case actionTypes.CREATE_PLANT_REQUEST_FAILURE: {
@@ -86,13 +91,40 @@ export default function appState(state = initialState, action) {
           isDeletingPlant: true
         }
     }
-    case actionTypes.DELETE_PLANT_REQUEST_SUCCESS:
+    case actionTypes.DELETE_PLANT_REQUEST_SUCCESS: {
+      return {
+        ...state,
+        isDeletingPlant: initialState.isDeletingPlant,
+        message: {
+            isError: false,
+            message: "Your plant has been successfully deleted.",
+        }
+      };
+    }
     case actionTypes.DELETE_PLANT_REQUEST_FAILURE: {
       return {
         ...state,
         isDeletingPlant: initialState.isDeletingPlant
       };
     }
+    // Show error message
+ case actionTypes.SHOW_ALERT_MESSAGE: {
+     return {
+         ...state,
+         message: {
+             isError: true,
+             message: action.response.error,
+         },
+     };
+ }
+
+ // Reset alert message
+ case actionTypes.RESET_ALERT_MESSAGE: {
+     return {
+         ...state,
+         message: initialState.message,
+     };
+ }
     default: {
       return state;
     }

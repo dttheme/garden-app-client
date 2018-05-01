@@ -19,7 +19,7 @@ class GardenPage extends Component {
               >
               Garden
             </h2>
-            <div className="flex flex-row flex-wrap justify-around items-stretch">
+            <div className="flex flex-row flex-wrap">
             {this.props.garden.plants.length >0 && this.props.garden.plants.map((plant, index) => (
                 <Plant
                   key={`garden-plant-${Math.random()}-${index}`}

@@ -26,7 +26,7 @@ export function fetchUserInfo() {
 //Fetch user login
 export const FETCH_USER_LOGIN_REQUEST_TRIGGERED = 'FETCH_USER_LOGIN_REQUEST_TRIGGERED';
 export const FETCH_USER_LOGIN_REQUEST_SUCCESS = 'FETCH_USER_LOGIN_REQUEST_SUCCESS';
-export const FETCH_USER_LOGIN_REQUEST_FAILURE = 'FETCH_USER_LOGIN_REQUEST_FAILURE'
+export const FETCH_USER_LOGIN_REQUEST_FAILURE = 'FETCH_USER_LOGIN_REQUEST_FAILURE';
 
 const handleLoginResponse = (response, dispatch) => {
   sessionStorage.setItem(appConfig.TOKEN_CONTENT_KEY, response.token);
@@ -55,6 +55,17 @@ export function fetchUserLogin(username, password) {
      promise,
  };
 }
+
+//logout
+export const LOGOUT_USER = 'LOGOUT_USER';
+export function userLogout(dispatch) {
+  sessionStorage.removeItem(appConfig.TOKEN_CONTENT_KEY);
+  dispatch ({
+    type: LOGOUT_USER,
+  })
+  dispatch(push('/'))
+}
+
 
 //Create user
 export const FETCH_USER_SIGNUP_REQUEST_TRIGGERED = 'FETCH_USER_SIGNUP_REQUEST_TRIGGERED';

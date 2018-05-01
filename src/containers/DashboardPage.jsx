@@ -33,6 +33,7 @@ export class DashboardPage extends Component {
             component="input"
             type="text"
             placeholder="Tomato"
+            required
             className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
@@ -46,6 +47,7 @@ export class DashboardPage extends Component {
             component="input"
             type="text"
             placeholder="Late February"
+            required
             className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label
@@ -73,6 +75,7 @@ export class DashboardPage extends Component {
             component="input"
             type="text"
             placeholder="Front porch"
+            required
             className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
             />
           <label

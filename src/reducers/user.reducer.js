@@ -17,7 +17,7 @@ export default function user(state=initialState, action) {
         id: action.response.id,
       };
     }
-    //Fetch user info
+    case actionTypes.FETCH_USER_LOGIN_REQUEST_SUCCESS:
     case actionTypes.FETCH_USER_INFO_REQUEST_SUCCESS: {
       return {
         ...state,
@@ -26,6 +26,12 @@ export default function user(state=initialState, action) {
         firstName: action.response.firstName,
         isLoggedIn: true,
       };
+    }
+    case actionTypes.LOGOUT_USER: {
+      return {
+        ...state,
+        ...initialState
+      }
     }
     default: {
       return state;

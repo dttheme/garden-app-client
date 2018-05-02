@@ -4,6 +4,7 @@ import * as actionTypes from '../actions/index.actions';
 const initialState = {
   isCreatingUser: false,
   isFetchingUserInfo: false,
+  isLoggingOut: false,
   isFetchingGarden: false,
   isFetchingPlant: false,
   isCreatingPlant: false,
@@ -104,7 +105,21 @@ export default function appState(state = initialState, action) {
     case actionTypes.DELETE_PLANT_REQUEST_FAILURE: {
       return {
         ...state,
-        isDeletingPlant: initialState.isDeletingPlant
+        isDeletingPlant: initialState.isDeletingPlant,
+        message: {
+            isError: false,
+            message: "Your plant has been successfully deleted.",
+        }
+      };
+    }
+    case actionTypes.LOGOUT_USER: {
+      return {
+        ...state,
+        isLoggingOut: initialState.isLoggingOut,
+        message: {
+            isError: false,
+            message: "You have been logged out!",
+        }
       };
     }
     // Show error message

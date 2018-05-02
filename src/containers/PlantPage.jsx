@@ -12,13 +12,7 @@ class PlantPage extends Component {
 
   render() {
     return (
-      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
-        {this.props.appState.isFetchingPlant ?
-          <div>
-            <h2>Loading...</h2>
-          </div>
-          :
-          //
+      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4">
           <div>
             {this.props.currentPlant && <Plant isNotLinking plant={this.props.currentPlant} /> }
           </div>

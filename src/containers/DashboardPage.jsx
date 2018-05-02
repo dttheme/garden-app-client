@@ -17,7 +17,7 @@ export class DashboardPage extends Component {
   }
   render() {
     return (
-      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
+      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns mb5 ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4">
         <h2 className="f2 tracked">
           Dashboard
         </h2>
@@ -34,7 +34,7 @@ export class DashboardPage extends Component {
             type="text"
             placeholder="Tomato"
             required
-            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+            className="db mb4 mt2 w-90 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="plantDate"
@@ -48,7 +48,7 @@ export class DashboardPage extends Component {
             type="text"
             placeholder="Late February"
             required
-            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+            className="db mb4 mt2 w-90 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="numberPlanted"
@@ -63,7 +63,7 @@ export class DashboardPage extends Component {
             value={1}
             min={1}
             max={100}
-            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+            className="db mb4 mt2 w-90 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="plantLocation"
@@ -76,7 +76,7 @@ export class DashboardPage extends Component {
             type="text"
             placeholder="Front porch"
             required
-            className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+            className="db mb4 mt2 w-90 w-70-m w-50-ns pa2"
             />
           <label
             htmlFor="waterFrequency"
@@ -110,7 +110,7 @@ export class DashboardPage extends Component {
                 </label>
                 <button
                   type="submit"
-                  className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black">
+                  className="w-90 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black">
                   Submit
                 </button>
               </form>

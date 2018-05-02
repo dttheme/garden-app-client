@@ -3,8 +3,6 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { fetchUserLogin } from '../actions/index.actions';
 
-// import './SignupForm.css';
-
 class LoginPage extends Component {
   submitHandler(val) {
     const username = val.username;
@@ -13,7 +11,7 @@ class LoginPage extends Component {
   }
   render() {
     return (
-      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
+      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4">
         <h2 className="f2 tracked">
           Login
         </h2>

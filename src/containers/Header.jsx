@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import appConfig from '../config/appConfig';
 
 class Header extends Component {
   render() {
     return (
       <div>
-        <div className="pt3 pb3 ml4 mr4">
+        <div className="dark-gray bg-dark-green fl fixed w-100 h-auto pt3 pb3 pl4 pr4 bb bw3 b--green">
           <h1
-            className="f3 f1-ns fw9 moon-grey pa0 ma0 dib tracked"
+            className="dark-gray f2 f1-ns fw9 pa0 ma0 dib tracked"
             >
             Sprout Bud
           </h1>
@@ -25,7 +24,7 @@ class Header extends Component {
                   <Link to="/garden" className="washed-green no-underline underline-hover hover-light-yellow pr4">{this.props.firstName}'s Garden</Link>
                 </li>
                 <li className="dib f5 fw9 tracked">
-                  <a onClick={this.props.logoutUser} className="ba0 washed-green no-underline underline-hover hover-light-yellow pr4">Logout</a>
+                  <a onClick={this.props.logoutUser} className="ba0 washed-green no-underline underline-hover hover-light-yellow pr4 pointer">Logout</a>
                 </li>
               </ul>
             </nav>

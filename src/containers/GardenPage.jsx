@@ -13,20 +13,21 @@ class GardenPage extends Component {
 
   render() {
     return (
-      <div className="w-90 w-60-ns mt5 ml7-ns ml5-m ba-ns bw2-ns pl6-ns pl4-m pl4 pb4">
+      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m mb3 ba-ns bw3-ns b--green ph4 pb4">
             <h2
-              className="f2 tracked"
+              className="w-100 pt4-ns pt1-m pb3-m pl3 mb0 mb3-ns f3 f2-ns bg-dark-green tracked"
               >
               Garden
             </h2>
-            <div className="flex flex-row flex-wrap">
+            <div className="flex flex-row flex-wrap justify-center justify-start-ns">
             {this.props.garden.plants.length >0 && this.props.garden.plants.map((plant, index) => (
+              <div className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns">
                 <Plant
                   key={`garden-plant-${Math.random()}-${index}`}
                   plant={plant}
                   deleteHandler={this.props.deletePlant}
-
                 />
+              </div>
             ))}
           </div>
       </div>

@@ -12,6 +12,9 @@ const initialState = {
   message: null
 }
 
+// TODO: Can I get rid of the appState actions that are not logoutUser?
+//Beased on Cameron Grams Analyst Timeline
+
 
 export default function appState(state = initialState, action) {
   switch (action.type) {

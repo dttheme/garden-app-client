@@ -58,6 +58,7 @@ export function fetchUserLogin(username, password) {
 
 //logout
 export const LOGOUT_USER = 'LOGOUT_USER';
+
 export function userLogout(dispatch) {
   sessionStorage.removeItem(appConfig.TOKEN_CONTENT_KEY);
   dispatch ({

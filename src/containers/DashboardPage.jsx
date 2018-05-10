@@ -17,7 +17,7 @@ export class DashboardPage extends Component {
   }
   render() {
     return (
-      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns mb5 ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4">
+      <div className="dark-gray bg-dark-green w-100 w-80-m w-60-ns mt5 mt7-m mt6-ns mb5 ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4">
         <h2 className="f2 tracked">
           Dashboard
         </h2>

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-var FontAwesome = require('react-fontawesome');
-
+// var FontAwesome = require('react-fontawesome');
+//
+// <FontAwesome
+//   className="fa fa-calendar-alt"
+// />
 
 export default function Plant(props) {
   return (
@@ -12,9 +15,6 @@ export default function Plant(props) {
         {!props.isNotLinking ? <Link className="washed-green no-underline underline-hover hover-light-yellow" to={`/plant/${props.plant._id}`}>{props.plant.plantName}</Link> : props.plant.plantName} ({props.plant.numberPlanted})
       </h3>
       <p>
-        <FontAwesome
-          className="fa fa-calendar-alt"
-        />
         {props.plant.plantDate}</p>
       <p>Location: {props.plant.plantLocation}</p>
       <p>You should water: {props.plant.waterFrequency}</p>

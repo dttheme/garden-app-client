@@ -21,9 +21,8 @@ class GardenPage extends Component {
             </h2>
             <div className="flex flex-row flex-wrap justify-center justify-start-ns">
             {this.props.garden.plants.length >0 && this.props.garden.plants.map((plant, index) => (
-              <div className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns">
+              <div key={`garden-plant-${Math.random()}-${index}`} className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns">
                 <Plant
-                  key={`garden-plant-${Math.random()}-${index}`}
                   plant={plant}
                   deleteHandler={this.props.deletePlant}
                 />

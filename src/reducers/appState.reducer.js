@@ -2,19 +2,13 @@ import * as actionTypes from '../actions/index.actions';
 
 
 const initialState = {
-  isCreatingUser: false,
   isFetchingUserInfo: false,
-  isLoggingOut: false,
   isFetchingGarden: false,
   isFetchingPlant: false,
   isCreatingPlant: false,
   isDeletingPlant: false,
   message: null
 }
-
-// TODO: Can I get rid of the appState actions that are not logoutUser?
-//Beased on Cameron Grams Analyst Timeline
-
 
 export default function appState(state = initialState, action) {
   switch (action.type) {
@@ -71,7 +65,6 @@ export default function appState(state = initialState, action) {
       }
     }
     case actionTypes.CREATE_PLANT_REQUEST_SUCCESS: {
-      //TODO: create message for successful plant creation
       return {
         ...state,
         isCreatingPlant: initialState.isCreatingPlant,
@@ -115,36 +108,38 @@ export default function appState(state = initialState, action) {
         }
       };
     }
+
+    //Logout user
     case actionTypes.LOGOUT_USER: {
       return {
         ...state,
-        isLoggingOut: initialState.isLoggingOut,
         message: {
             isError: false,
             message: "You have been logged out!",
         }
       };
     }
-    // Show error message
- case actionTypes.SHOW_ALERT_MESSAGE: {
-     return {
-         ...state,
-         message: {
-             isError: true,
-             message: action.response.error,
-         },
-     };
- }
 
- // Reset alert message
- case actionTypes.RESET_ALERT_MESSAGE: {
-     return {
-         ...state,
-         message: initialState.message,
-     };
- }
-    default: {
-      return state;
-    }
+    // Show error message
+   case actionTypes.SHOW_ALERT_MESSAGE: {
+       return {
+           ...state,
+           message: {
+               isError: true,
+               message: action.response.error,
+           },
+       };
+   }
+
+   // Reset alert message
+   case actionTypes.RESET_ALERT_MESSAGE: {
+       return {
+           ...state,
+           message: initialState.message,
+       };
+   }
+      default: {
+        return state;
+      }
   }
 }

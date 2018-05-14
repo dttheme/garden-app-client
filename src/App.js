@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
-import { history } from './redux/store/configure-store';
+
 import Main from './containers/MainContainer'
 import PrivateRoute from './components/PrivateRoute';
 import GlobalLoader from './containers/GlobalLoader';
@@ -18,20 +17,20 @@ class App extends Component {
   render() {
     return (
       <div className="App bg-dark-green min-vh-100">
-        <ConnectedRouter history={history}>
-          <Switch>
-            <GlobalLoader>
-              <Main>
+
+          <GlobalLoader>
+            <Main>
+              <Switch>
                 <Route exact path="/" component={ Home } />
                 <Route exact path="/signup" component={ SignUp } />
                 <Route exact path="/login" component={ Login } />
                 <PrivateRoute exact path="/dashboard" component={ Dashboard } />
                 <PrivateRoute exact path="/garden" component={ Garden } />
                 <PrivateRoute exact path="/plant/:id" component={ Plant } />
-              </Main>
-            </GlobalLoader>
-          </Switch>
-        </ConnectedRouter>
+              </Switch>
+            </Main>
+          </GlobalLoader>
+
       </div>
     );
   }

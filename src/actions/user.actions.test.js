@@ -17,8 +17,6 @@ describe('User actions', () => {
       const store = mockStore({});
       const token = '12345';
       const response = {
-
-
       };
       sessionStorage.setItem('token', '12345');
       fetch.mockResponseOnce(JSON.stringify(response));

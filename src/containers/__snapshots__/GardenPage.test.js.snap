@@ -1,0 +1,475 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GardenPage /> should render page 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GardenPage
+    fetchGarden={[Function]}
+    garden={
+        Object {
+            "plants": Array [
+              Object {
+                "id": "123",
+                "plantName": "Lettuce",
+              },
+              Object {
+                "id": "456",
+                "plantName": "Jalepeno",
+              },
+            ],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="w-100 pt4-ns pt1-m pb3-m pl3 mb0 mb3-ns f3 f2-ns bg-dark-green tracked"
+>
+          Garden
+</h2>,
+        <div
+          className="flex flex-row flex-wrap justify-center justify-start-ns"
+>
+          <div
+                    className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+          >
+                    <Plant
+                              deleteHandler={null}
+                              isNotLinking={false}
+                              numberPlanted={null}
+                              plant={
+                                        Object {
+                                                  "id": "123",
+                                                  "plantName": "Lettuce",
+                                                }
+                              }
+                              plantDate="00/00/00"
+                              plantLocation=""
+                              plantName=""
+                              waterFrequency=""
+                    />
+          </div>
+          <div
+                    className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+          >
+                    <Plant
+                              deleteHandler={null}
+                              isNotLinking={false}
+                              numberPlanted={null}
+                              plant={
+                                        Object {
+                                                  "id": "456",
+                                                  "plantName": "Jalepeno",
+                                                }
+                              }
+                              plantDate="00/00/00"
+                              plantLocation=""
+                              plantName=""
+                              waterFrequency=""
+                    />
+          </div>
+</div>,
+      ],
+      "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m mb3 ba-ns bw3-ns b--green ph4 pb4",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Garden",
+          "className": "w-100 pt4-ns pt1-m pb3-m pl3 mb0 mb3-ns f3 f2-ns bg-dark-green tracked",
+        },
+        "ref": null,
+        "rendered": "Garden",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+>
+              <Plant
+                            deleteHandler={null}
+                            isNotLinking={false}
+                            numberPlanted={null}
+                            plant={
+                                          Object {
+                                                        "id": "123",
+                                                        "plantName": "Lettuce",
+                                                      }
+                            }
+                            plantDate="00/00/00"
+                            plantLocation=""
+                            plantName=""
+                            waterFrequency=""
+              />
+</div>,
+            <div
+              className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+>
+              <Plant
+                            deleteHandler={null}
+                            isNotLinking={false}
+                            numberPlanted={null}
+                            plant={
+                                          Object {
+                                                        "id": "456",
+                                                        "plantName": "Jalepeno",
+                                                      }
+                            }
+                            plantDate="00/00/00"
+                            plantLocation=""
+                            plantName=""
+                            waterFrequency=""
+              />
+</div>,
+          ],
+          "className": "flex flex-row flex-wrap justify-center justify-start-ns",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "garden-plant-0",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Plant
+                deleteHandler={null}
+                isNotLinking={false}
+                numberPlanted={null}
+                plant={
+                                Object {
+                                                "id": "123",
+                                                "plantName": "Lettuce",
+                                              }
+                }
+                plantDate="00/00/00"
+                plantLocation=""
+                plantName=""
+                waterFrequency=""
+/>,
+              "className": "grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "deleteHandler": null,
+                "isNotLinking": false,
+                "numberPlanted": null,
+                "plant": Object {
+                  "id": "123",
+                  "plantName": "Lettuce",
+                },
+                "plantDate": "00/00/00",
+                "plantLocation": "",
+                "plantName": "",
+                "waterFrequency": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "garden-plant-1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Plant
+                deleteHandler={null}
+                isNotLinking={false}
+                numberPlanted={null}
+                plant={
+                                Object {
+                                                "id": "456",
+                                                "plantName": "Jalepeno",
+                                              }
+                }
+                plantDate="00/00/00"
+                plantLocation=""
+                plantName=""
+                waterFrequency=""
+/>,
+              "className": "grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "deleteHandler": null,
+                "isNotLinking": false,
+                "numberPlanted": null,
+                "plant": Object {
+                  "id": "456",
+                  "plantName": "Jalepeno",
+                },
+                "plantDate": "00/00/00",
+                "plantLocation": "",
+                "plantName": "",
+                "waterFrequency": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="w-100 pt4-ns pt1-m pb3-m pl3 mb0 mb3-ns f3 f2-ns bg-dark-green tracked"
+>
+            Garden
+</h2>,
+          <div
+            className="flex flex-row flex-wrap justify-center justify-start-ns"
+>
+            <div
+                        className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+            >
+                        <Plant
+                                    deleteHandler={null}
+                                    isNotLinking={false}
+                                    numberPlanted={null}
+                                    plant={
+                                                Object {
+                                                            "id": "123",
+                                                            "plantName": "Lettuce",
+                                                          }
+                                    }
+                                    plantDate="00/00/00"
+                                    plantLocation=""
+                                    plantName=""
+                                    waterFrequency=""
+                        />
+            </div>
+            <div
+                        className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+            >
+                        <Plant
+                                    deleteHandler={null}
+                                    isNotLinking={false}
+                                    numberPlanted={null}
+                                    plant={
+                                                Object {
+                                                            "id": "456",
+                                                            "plantName": "Jalepeno",
+                                                          }
+                                    }
+                                    plantDate="00/00/00"
+                                    plantLocation=""
+                                    plantName=""
+                                    waterFrequency=""
+                        />
+            </div>
+</div>,
+        ],
+        "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m mb3 ba-ns bw3-ns b--green ph4 pb4",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Garden",
+            "className": "w-100 pt4-ns pt1-m pb3-m pl3 mb0 mb3-ns f3 f2-ns bg-dark-green tracked",
+          },
+          "ref": null,
+          "rendered": "Garden",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+>
+                <Plant
+                                deleteHandler={null}
+                                isNotLinking={false}
+                                numberPlanted={null}
+                                plant={
+                                                Object {
+                                                                "id": "123",
+                                                                "plantName": "Lettuce",
+                                                              }
+                                }
+                                plantDate="00/00/00"
+                                plantLocation=""
+                                plantName=""
+                                waterFrequency=""
+                />
+</div>,
+              <div
+                className="grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns"
+>
+                <Plant
+                                deleteHandler={null}
+                                isNotLinking={false}
+                                numberPlanted={null}
+                                plant={
+                                                Object {
+                                                                "id": "456",
+                                                                "plantName": "Jalepeno",
+                                                              }
+                                }
+                                plantDate="00/00/00"
+                                plantLocation=""
+                                plantName=""
+                                waterFrequency=""
+                />
+</div>,
+            ],
+            "className": "flex flex-row flex-wrap justify-center justify-start-ns",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "garden-plant-0",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Plant
+                  deleteHandler={null}
+                  isNotLinking={false}
+                  numberPlanted={null}
+                  plant={
+                                    Object {
+                                                      "id": "123",
+                                                      "plantName": "Lettuce",
+                                                    }
+                  }
+                  plantDate="00/00/00"
+                  plantLocation=""
+                  plantName=""
+                  waterFrequency=""
+/>,
+                "className": "grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "deleteHandler": null,
+                  "isNotLinking": false,
+                  "numberPlanted": null,
+                  "plant": Object {
+                    "id": "123",
+                    "plantName": "Lettuce",
+                  },
+                  "plantDate": "00/00/00",
+                  "plantLocation": "",
+                  "plantName": "",
+                  "waterFrequency": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "garden-plant-1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Plant
+                  deleteHandler={null}
+                  isNotLinking={false}
+                  numberPlanted={null}
+                  plant={
+                                    Object {
+                                                      "id": "456",
+                                                      "plantName": "Jalepeno",
+                                                    }
+                  }
+                  plantDate="00/00/00"
+                  plantLocation=""
+                  plantName=""
+                  waterFrequency=""
+/>,
+                "className": "grow bg-dark-green w-30-ns w-100-m pa4 ma2-ns mb3-m bb bw1 b--green ba-ns shadow-5-ns",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "deleteHandler": null,
+                  "isNotLinking": false,
+                  "numberPlanted": null,
+                  "plant": Object {
+                    "id": "456",
+                    "plantName": "Jalepeno",
+                  },
+                  "plantDate": "00/00/00",
+                  "plantLocation": "",
+                  "plantName": "",
+                  "waterFrequency": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

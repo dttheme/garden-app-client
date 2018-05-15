@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { fetchUserLogin } from '../actions/index.actions';
 
-class LoginPage extends Component {
+export class LoginPage extends Component {
   submitHandler(val) {
     const username = val.username;
     const password = val.password;

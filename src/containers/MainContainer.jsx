@@ -12,7 +12,7 @@ const BgStyle = {
   backgroundAttachment: "fixed",
 }
 
-const Main = props => (
+export const MainContainer = props => (
   <div>
     <div>
       <Header logoutUser={props.logout} isLoggedIn={props.user.isLoggedIn} firstName={props.user.firstName} />
@@ -30,7 +30,7 @@ const Main = props => (
       {props.children}
     </div>
   </div>
-)
+);
 
 const mapStateToProps = state => ({
   appState: state.appState,
@@ -41,4 +41,4 @@ const matchDispatchToProps = dispatch => ({
   logout: userLogout.bind(null, dispatch)
 })
 
-export default connect(mapStateToProps, matchDispatchToProps)(Main);
+export default connect(mapStateToProps, matchDispatchToProps)(MainContainer);

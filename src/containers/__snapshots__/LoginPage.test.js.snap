@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginPage /> should render page 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginPage
+    handleSubmit={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2
+          className="f2 tracked"
+>
+          Login
+</h2>,
+        <form
+          method="POST"
+          onSubmit={undefined}
+>
+          <label
+                    className="tracked"
+                    htmlFor="email"
+          >
+                    Email
+          </label>
+          <Field
+                    className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                    component="input"
+                    name="username"
+                    placeholder="sprout@email.com"
+                    type="email"
+          />
+          <label
+                    className="tracked"
+                    htmlFor="password"
+          >
+                    Password
+          </label>
+          <Field
+                    className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                    component="input"
+                    name="password"
+                    type="password"
+          />
+          <button
+                    className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black"
+                    type="submit"
+          >
+                    Login
+          </button>
+</form>,
+      ],
+      "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Login",
+          "className": "f2 tracked",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="tracked"
+              htmlFor="email"
+>
+              Email
+</label>,
+            <Field
+              className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+              component="input"
+              name="username"
+              placeholder="sprout@email.com"
+              type="email"
+/>,
+            <label
+              className="tracked"
+              htmlFor="password"
+>
+              Password
+</label>,
+            <Field
+              className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+              component="input"
+              name="password"
+              type="password"
+/>,
+            <button
+              className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black"
+              type="submit"
+>
+              Login
+</button>,
+          ],
+          "method": "POST",
+          "onSubmit": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Email",
+              "className": "tracked",
+              "htmlFor": "email",
+            },
+            "ref": null,
+            "rendered": "Email",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "db mb4 mt2 w-100 w-70-m w-50-ns pa2",
+              "component": "input",
+              "name": "username",
+              "placeholder": "sprout@email.com",
+              "type": "email",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Password",
+              "className": "tracked",
+              "htmlFor": "password",
+            },
+            "ref": null,
+            "rendered": "Password",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "db mb4 mt2 w-100 w-70-m w-50-ns pa2",
+              "component": "input",
+              "name": "password",
+              "type": "password",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login",
+              "className": "w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Login",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="f2 tracked"
+>
+            Login
+</h2>,
+          <form
+            method="POST"
+            onSubmit={undefined}
+>
+            <label
+                        className="tracked"
+                        htmlFor="email"
+            >
+                        Email
+            </label>
+            <Field
+                        className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                        component="input"
+                        name="username"
+                        placeholder="sprout@email.com"
+                        type="email"
+            />
+            <label
+                        className="tracked"
+                        htmlFor="password"
+            >
+                        Password
+            </label>
+            <Field
+                        className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                        component="input"
+                        name="password"
+                        type="password"
+            />
+            <button
+                        className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black"
+                        type="submit"
+            >
+                        Login
+            </button>
+</form>,
+        ],
+        "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Login",
+            "className": "f2 tracked",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="tracked"
+                htmlFor="email"
+>
+                Email
+</label>,
+              <Field
+                className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                component="input"
+                name="username"
+                placeholder="sprout@email.com"
+                type="email"
+/>,
+              <label
+                className="tracked"
+                htmlFor="password"
+>
+                Password
+</label>,
+              <Field
+                className="db mb4 mt2 w-100 w-70-m w-50-ns pa2"
+                component="input"
+                name="password"
+                type="password"
+/>,
+              <button
+                className="w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black"
+                type="submit"
+>
+                Login
+</button>,
+            ],
+            "method": "POST",
+            "onSubmit": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Email",
+                "className": "tracked",
+                "htmlFor": "email",
+              },
+              "ref": null,
+              "rendered": "Email",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "db mb4 mt2 w-100 w-70-m w-50-ns pa2",
+                "component": "input",
+                "name": "username",
+                "placeholder": "sprout@email.com",
+                "type": "email",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Password",
+                "className": "tracked",
+                "htmlFor": "password",
+              },
+              "ref": null,
+              "rendered": "Password",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "db mb4 mt2 w-100 w-70-m w-50-ns pa2",
+                "component": "input",
+                "name": "password",
+                "type": "password",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login",
+                "className": "w-100 w-70-m w-50-ns f4 link dim ba bw2 ph3 pv2 mt3 mb2 dib near-black",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": "Login",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import hasToken from '../helpers/token'
 import { fetchUserInfo } from "../actions/index.actions";
 
+// TODO: Figure out why isLoggedIn does not have user information
+// TODO: Center "Loading" on page
+// TODO: Add loading icon
+
 class GlobalLoader extends React.Component {
   componentDidMount() {
     if (hasToken() && !this.props.user.isLoggedIn) {
@@ -15,8 +19,8 @@ class GlobalLoader extends React.Component {
     return (
       <div>
         {this.props.appState.isFetchingUserInfo ?
-        <div>
-        <h2>
+        <div className="center">
+        <h2 className="mt0">
           Loading...
         </h2>
       </div>

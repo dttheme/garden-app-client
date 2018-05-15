@@ -4,6 +4,7 @@ import Header from './Header';
 
 describe('<Header />', () => {
   it('Should render without crashing', () => {
-    shallow(<Header />);
+    const wrapper = shallow(<Header />);
+    expect(wrapper).toMatchSnapshot()
   });
 });

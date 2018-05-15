@@ -2,7 +2,8 @@ import * as actionTypes from '../actions/index.actions';
 
 const initialState = {
   plants: [],
-  currentPlant: null
+  currentPlant: null,
+  message: null
 }
 
 
@@ -26,7 +27,11 @@ export default function garden(state = initialState, action) {
     case actionTypes.FETCH_PLANT_REQUEST_SUCCESS: {
       return {
         ...state,
-        currentPlant: action.response
+        currentPlant: action.response,
+        message: {
+            isError: false,
+            message: "You have successfully created a new plant!",
+        }
       };
     }
     default: {

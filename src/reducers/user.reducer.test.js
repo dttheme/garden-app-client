@@ -4,6 +4,9 @@ import userReducer from './user.reducer';
 describe('user reducers', () => {
 
   it('creates an account with a unique id', () => {
+    const fakeUser = {
+      id: '123',
+    }
     const initialState = {
       id: null,
       message: null
@@ -15,11 +18,17 @@ describe('user reducers', () => {
           message: "You have successfully created an account!",
       }
     };
-    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_SIGNUP_REQUEST_SUCCESS})
+    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_SIGNUP_REQUEST_SUCCESS, response: fakeUser})
     expect(reducedState).toEqual(expectedState)
   })
 
   it('sets isLoggedIn to true', () => {
+    const fakeUser = {
+      id: '123',
+      username: 'j@e.com',
+      firstName: 'Joe',
+      isLoggedIn: true,
+    }
     const initialState = {
       id: null,
       username: null,
@@ -32,11 +41,17 @@ describe('user reducers', () => {
       firstName: 'Joe',
       isLoggedIn: true,
     };
-    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_LOGIN_REQUEST_SUCCESS})
+    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_LOGIN_REQUEST_SUCCESS, response: fakeUser})
     expect(reducedState).toEqual(expectedState)
   })
 
   it('fetches user information', () => {
+    const fakeUser = {
+      id: '123',
+      username: 'j@e.com',
+      firstName: 'Joe',
+      isLoggedIn: true,
+    }
     const initialState = {
       id: null,
       username: null,
@@ -48,7 +63,7 @@ describe('user reducers', () => {
       firstName: 'Joe',
       isLoggedIn: true,
     };
-    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_INFO_REQUEST_SUCCESS})
+    const reducedState = userReducer(initialState, {type: actions.FETCH_USER_INFO_REQUEST_SUCCESS, response: fakeUser})
     expect(reducedState).toEqual(expectedState)
   })
 

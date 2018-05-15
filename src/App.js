@@ -17,20 +17,18 @@ class App extends Component {
   render() {
     return (
       <div className="App bg-dark-green min-vh-100">
-
-          <GlobalLoader>
-            <Main>
-              <Switch>
-                <Route exact path="/" component={ Home } />
-                <Route exact path="/signup" component={ SignUp } />
-                <Route exact path="/login" component={ Login } />
-                <PrivateRoute exact path="/dashboard" component={ Dashboard } />
-                <PrivateRoute exact path="/garden" component={ Garden } />
-                <PrivateRoute exact path="/plant/:id" component={ Plant } />
-              </Switch>
-            </Main>
-          </GlobalLoader>
-
+        <GlobalLoader>
+          <Main>
+            <Switch>
+              <Route exact path="/" component={ Home } />
+              <Route exact path="/signup" component={ SignUp } />
+              <Route exact path="/login" component={ Login } />
+              <PrivateRoute exact path="/dashboard" component={ Dashboard } />
+              <PrivateRoute exact path="/garden" component={ Garden } />
+              <PrivateRoute exact path="/plant/:id" component={ Plant } />
+            </Switch>
+          </Main>
+        </GlobalLoader>
       </div>
     );
   }

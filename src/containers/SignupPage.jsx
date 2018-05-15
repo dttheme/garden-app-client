@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { createUser } from '../actions/index.actions';
 
-class SignupPage extends Component {
+export class SignupPage extends Component {
   submitHandler(val) {
     const email = val.email;
     const password = val.password;

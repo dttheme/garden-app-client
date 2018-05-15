@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Plant /> should render page 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Plant
+    deleteHandler={null}
+    isNotLinking={false}
+    numberPlanted={null}
+    plant={
+        Object {
+            "_id": "123",
+            "plantName": "Pepper",
+          }
+    }
+    plantDate="00/00/00"
+    plantLocation=""
+    plantName=""
+    waterFrequency=""
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="f4 fw9 tracked"
+>
+          <Link
+                    className="washed-green no-underline underline-hover hover-light-yellow"
+                    replace={false}
+                    to="/plant/123"
+          >
+                    Pepper
+          </Link>
+           (
+          )
+</h3>,
+        <p />,
+        <p>
+          Location: 
+</p>,
+        <p>
+          You should water: 
+</p>,
+        null,
+      ],
+      "className": "",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="washed-green no-underline underline-hover hover-light-yellow"
+              replace={false}
+              to="/plant/123"
+>
+              Pepper
+</Link>,
+            " (",
+            undefined,
+            ")",
+          ],
+          "className": "f4 fw9 tracked",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Pepper",
+              "className": "washed-green no-underline underline-hover hover-light-yellow",
+              "replace": false,
+              "to": "/plant/123",
+            },
+            "ref": null,
+            "rendered": "Pepper",
+            "type": [Function],
+          },
+          " (",
+          undefined,
+          ")",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Location: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Location: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "You should water: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "You should water: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="f4 fw9 tracked"
+>
+            <Link
+                        className="washed-green no-underline underline-hover hover-light-yellow"
+                        replace={false}
+                        to="/plant/123"
+            >
+                        Pepper
+            </Link>
+             (
+            )
+</h3>,
+          <p />,
+          <p>
+            Location: 
+</p>,
+          <p>
+            You should water: 
+</p>,
+          null,
+        ],
+        "className": "",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="washed-green no-underline underline-hover hover-light-yellow"
+                replace={false}
+                to="/plant/123"
+>
+                Pepper
+</Link>,
+              " (",
+              undefined,
+              ")",
+            ],
+            "className": "f4 fw9 tracked",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Pepper",
+                "className": "washed-green no-underline underline-hover hover-light-yellow",
+                "replace": false,
+                "to": "/plant/123",
+              },
+              "ref": null,
+              "rendered": "Pepper",
+              "type": [Function],
+            },
+            " (",
+            undefined,
+            ")",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Location: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Location: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "You should water: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "You should water: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

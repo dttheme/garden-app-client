@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { GardenPage } from './GardenPage';
 
-// TODO: Create a mock function using jest (spy function)
 
 describe('<GardenPage />', () => {
 

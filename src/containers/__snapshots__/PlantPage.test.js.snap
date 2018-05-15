@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlantPage /> should render page 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PlantPage
+    fetchPlant={[Function]}
+    isNotLinking={true}
+    match={
+        Object {
+            "params": Object {
+              "id": 1,
+            },
+          }
+    }
+    plant={
+        Object {
+            "id": "123",
+            "plantName": "Lettuce",
+          }
+    }
+    user={
+        Object {
+            "firstName": "Joe",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <Link
+                    className="washed-green no-underline underline-hover hover-light-yellow pr4"
+                    replace={false}
+                    to="/garden"
+          >
+                    Joe
+                    's Garden
+          </Link>
+</div>,
+        "}",
+      ],
+      "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="washed-green no-underline underline-hover hover-light-yellow pr4"
+              replace={false}
+              to="/garden"
+>
+              Joe
+              's Garden
+</Link>,
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Joe",
+                "'s Garden",
+              ],
+              "className": "washed-green no-underline underline-hover hover-light-yellow pr4",
+              "replace": false,
+              "to": "/garden",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Joe",
+              "'s Garden",
+            ],
+            "type": [Function],
+          },
+          undefined,
+        ],
+        "type": "div",
+      },
+      "}",
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <Link
+                        className="washed-green no-underline underline-hover hover-light-yellow pr4"
+                        replace={false}
+                        to="/garden"
+            >
+                        Joe
+                        's Garden
+            </Link>
+</div>,
+          "}",
+        ],
+        "className": "dark-gray bg-dark-green w-100 w-80-m w-60-ns mt7-m mt6-ns ml7-ns ml5-m ba-ns bw3-ns b--green pl6-ns pl4-m pl4 pb4",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="washed-green no-underline underline-hover hover-light-yellow pr4"
+                replace={false}
+                to="/garden"
+>
+                Joe
+                's Garden
+</Link>,
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Joe",
+                  "'s Garden",
+                ],
+                "className": "washed-green no-underline underline-hover hover-light-yellow pr4",
+                "replace": false,
+                "to": "/garden",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Joe",
+                "'s Garden",
+              ],
+              "type": [Function],
+            },
+            undefined,
+          ],
+          "type": "div",
+        },
+        "}",
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

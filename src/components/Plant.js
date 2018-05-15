@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 //   className="fa fa-calendar-alt"
 // />
 
-export default function Plant(props) {
+const Plant = (props) => {
   return (
     <div className="">
       <h3
@@ -32,3 +32,5 @@ Plant.defaultProps = {
   deleteHandler: null,
   isNotLinking: false
 }
+
+export default Plant;

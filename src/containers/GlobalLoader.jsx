@@ -3,15 +3,13 @@ import { connect } from 'react-redux';
 import hasToken from '../helpers/token'
 import { fetchUserInfo } from "../actions/index.actions";
 
-// TODO: Figure out why isLoggedIn does not have user information
 // TODO: Center "Loading" on page
 // TODO: Add loading icon
 
-class GlobalLoader extends React.Component {
+export class GlobalLoader extends React.Component {
   componentDidMount() {
     if (hasToken() && !this.props.user.isLoggedIn) {
       console.log('fetching user info');
-      console.log(this.props.user);
       this.props.fetchUserInfo();
     }
 }

@@ -6,8 +6,8 @@ export const FETCH_USER_INFO_REQUEST_TRIGGERED = 'FETCH_USER_INFO_REQUEST_TRIGGE
 export const FETCH_USER_INFO_REQUEST_SUCCESS = 'FETCH_USER_INFO_REQUEST_SUCCESS';
 export const FETCH_USER_INFO_REQUEST_FAILURE = 'FETCH_USER_INFO_REQUEST_FAILURE';
 
-
 export function fetchUserInfo() {
+  console.log(sessionStorage.getItem(appConfig.TOKEN_CONTENT_KEY));
   const promise = fetch(`${appConfig.USER_ENDPOINT}/`, {
         headers: {
             'Content-Type': 'application/json',

@@ -4,7 +4,6 @@ import Header from './Header';
 import Alert from '../components/Alert';
 import { userLogout } from '../actions/index.actions';
 import dirt from '../images/dirt.jpg';
-// import logo from './img/logo.svg';
 
 const BgStyle = {
   background:`url(${dirt}) no-repeat`,

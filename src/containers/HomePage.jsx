@@ -4,22 +4,30 @@ import WelcomeMessage from '../components/Welcome'
 import mainHeaderImg from "../images/sprouts.jpg";
 
 
-class Home extends Component {
+export class HomePage extends Component {
   render() {
     return (
-      <div
-        className="mt7"
-        >
-        <WelcomeMessage />
-      </div>
-    );
+      <div>
+        {!this.props.user.isLoggedIn ?
+          <div className="center">
+            <WelcomeMessage />
+          </div>
+          :
+            <div className="mt7">
+              <div><h2>{this.props.user.firstName}</h2></div>
+            </div>
+          }
+        </div>
+      )
+    }
   }
-}
 
-// const mapStateToProps = (state)
-//
-// const AppContainer = connect(
-//   mapStateToProps,
-// )
 
-export default Home;
+  const mapStateToProps = state => ({
+    user: state.user,
+    appState: {
+      isFetchingGarden: state.appState.isFetchingUserInfo,
+    },
+  })
+
+  export default connect(mapStateToProps)(HomePage);

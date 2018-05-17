@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <div className="dark-gray bg-dark-green fl fixed w-100 h-auto pt3 pb3 pl4 pr4 bb bw3 b--green">
+        <div className="dark-gray bg-dark-green fl fixed z-9999 w-100 h-auto pt3 pb3 pl4 pr4 bb bw3 b--green">
           <h1
             className="dark-gray f2 f1-ns fw9 pa0 ma0 dib tracked"
             >

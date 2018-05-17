@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 // var FontAwesome = require('react-fontawesome');
 //

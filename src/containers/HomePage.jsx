@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import WelcomeMessage from '../components/Welcome';
 import ReturnMessage from '../components/ReturnMessage';
-import mainHeaderImg from "../images/sprouts.jpg";
+// import mainHeaderImg from "../images/sprouts.jpg";
 
 
 export class HomePage extends Component {
